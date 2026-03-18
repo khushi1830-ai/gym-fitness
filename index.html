@@ -4,59 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WebNxGen Gym</title>
+
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
 <h1>WebNxGen Gym</h1>
 <nav>
 <a href="#home">Home</a>
 <a href="#info">Info</a>
+<a href="#trainers">Trainers</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- HERO SLIDER -->
+<!-- HERO SECTION -->
 <section id="home" class="hero">
 
-<div class="slider">
-<div class="slide active">
+<div class="overlay"></div>
+
 <video autoplay muted loop>
 <source src="https://cdn.coverr.co/videos/coverr-working-out-in-the-gym-5177/1080p.mp4">
 </video>
-</div>
 
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
-</div>
-
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
-</div>
-</div>
-
-<div class="hero-text">
-<h2>Transform Your Body</h2>
+<div class="hero-content">
+<h1>Transform Your Body</h1>
 <p>Next Generation Fitness Experience</p>
+<a href="#info" class="btn">Explore</a>
 </div>
 
 </section>
 
-<!-- INFO -->
+<!-- INFO SECTION -->
 <section id="info" class="section">
-<h2>Gym Info</h2>
+<h2>Gym Information</h2>
 
 <div class="grid">
 
 <div class="card reveal">📍 Location: Jamshedpur</div>
-<div class="card reveal">💰 ₹1500/month</div>
-<div class="card reveal">⏰ 6AM - 10PM</div>
-<div class="card reveal">🏋 Advanced Equipment</div>
-<div class="card reveal">🧃 Gym Accessories</div>
+<div class="card reveal">💰 Price: ₹1500/month</div>
+<div class="card reveal">⏰ Hours: 6AM - 10PM</div>
+<div class="card reveal">🏋 Equipment: Modern Machines</div>
+<div class="card reveal">🧃 Gym Accessories Available</div>
 <div class="card reveal">👨‍🏫 Certified Trainers</div>
 
 </div>
@@ -64,8 +58,8 @@
 </section>
 
 <!-- TRAINERS -->
-<section class="section">
-<h2>Trainers</h2>
+<section id="trainers" class="section">
+<h2>Our Trainers</h2>
 
 <div class="trainer reveal">
 <img src="https://images.unsplash.com/photo-1594737625785-cd06b2a7b5fa">
@@ -103,14 +97,14 @@
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
-<p>📍 Jamshedpur</p>
-<p>📞 +91 9999999999</p>
+<p>📍 Location: Jamshedpur</p>
+<p>📞 Phone: +91 9999999999</p>
 
-<form id="form">
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email" required>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
 <textarea placeholder="Message"></textarea>
 <button>Send</button>
 </form>
