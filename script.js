@@ -1,18 +1,21 @@
-// SLIDER
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+// SAFE SCRIPT (NO CRASH)
 
-setInterval(()=>{
-slides[index].classList.remove("active");
-index = (index + 1) % slides.length;
-slides[index].classList.add("active");
-},3000);
+// SMOOTH SCROLL
+document.querySelectorAll("a").forEach(anchor => {
+anchor.addEventListener("click", function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior: "smooth"
+});
+});
+});
 
-// SCROLL ANIMATION
-window.addEventListener("scroll", ()=>{
-document.querySelectorAll(".reveal").forEach(el=>{
+// SCROLL REVEAL
+window.addEventListener("scroll", () => {
+document.querySelectorAll(".reveal").forEach(el => {
 let pos = el.getBoundingClientRect().top;
-if(pos < window.innerHeight - 50){
+
+if (pos < window.innerHeight - 50) {
 el.classList.add("active");
 }
 });
